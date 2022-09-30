@@ -8,6 +8,7 @@ def h():
     yield 12
     print('yes')
 if __name__ == '__main__':
-    test_ = torch.randn(2,3)
-    print(test_)
-    print(test_.shape)
+    w = torch.normal(0, 0.01, (8,1), requires_grad=True)
+    b = torch.zeros(1, requires_grad=True)
+    print(w)
+    print(b)
