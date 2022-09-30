@@ -1,3 +1,4 @@
+from time import perf_counter
 import torch
 import random
 
@@ -7,5 +8,6 @@ def h():
     yield 12
     print('yes')
 if __name__ == '__main__':
-    test_batch = [[1,2,3,4,5,6],[1,2,3,4,5,6],[1,2,3,4,5,6]]
-    h()
+    test_ = torch.randn(2,3)
+    print(test_)
+    print(test_.shape)
